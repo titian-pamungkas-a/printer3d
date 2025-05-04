@@ -1,0 +1,14 @@
+E:\____NewArc\FORMULATRIX\printer3d\bin\Debug\net8.0\printer3d.exe
+E:\____NewArc\FORMULATRIX\printer3d\bin\Debug\net8.0\printer3d.deps.json
+E:\____NewArc\FORMULATRIX\printer3d\bin\Debug\net8.0\printer3d.runtimeconfig.json
+E:\____NewArc\FORMULATRIX\printer3d\bin\Debug\net8.0\printer3d.dll
+E:\____NewArc\FORMULATRIX\printer3d\bin\Debug\net8.0\printer3d.pdb
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.GeneratedMSBuildEditorConfig.editorconfig
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.AssemblyInfoInputs.cache
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.AssemblyInfo.cs
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.csproj.CoreCompileInputs.cache
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.dll
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\refint\printer3d.dll
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.pdb
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.genruntimeconfig.cache
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\ref\printer3d.dll
