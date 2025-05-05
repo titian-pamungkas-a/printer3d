@@ -47,17 +47,19 @@ namespace printer3d
             cancellationTokenSource.Cancel();
         }
 
-        public void Move(Point startPoint, List<Point> points, Motor[] motors)
+        public async Task Move(Point startPoint, List<Point> points, Motor[] motors)
         {
             this.currentPoint = startPoint;
             for (int i = 0; i < points.Count; i++)
             {
                 Console.WriteLine($"Titik sekarang {currentPoint}");
+                double zPosition = await motors[2].MoveAsync(currentPoint.zAxis, points[i].zAxis, cancellationToken);
+
                 tasks = new Task<double>[]
                 {
                     Task.Run(() => motors[0].MoveAsync(this.currentPoint.xAxis, points[i].xAxis, cancellationToken), cancellationToken),
                     Task.Run(() => motors[1].MoveAsync(currentPoint.yAxis, points[i].yAxis, cancellationToken), cancellationToken),
-                    Task.Run(() => motors[2].MoveAsync(currentPoint.zAxis, points[i].zAxis, cancellationToken), cancellationToken)
+                    //Task.Run(() => motors[2].MoveAsync(currentPoint.zAxis, points[i].zAxis, cancellationToken), cancellationToken)
                 };
                 /*Task<double> xMotorTask = Task.Run(() => motors[0].MoveAsync(currentPoint.xAxis, points[i].xAxis, cancellationToken), cancellationToken);
                 Task<double> yMotorTask = Task.Run(() => motors[1].MoveAsync(currentPoint.yAxis, points[i].yAxis, cancellationToken), cancellationToken);
@@ -65,7 +67,6 @@ namespace printer3d
                 try
                 {
                     Task.WaitAll(tasks);
-                    currentPoint = currentPoint;
                 }
                 catch (Exception ex)
                 {
@@ -82,7 +83,7 @@ namespace printer3d
                 }
 
                 //currentPoint = new Point(tasks[0].Result, tasks[1].Result, tasks[2].Result);
-                Console.WriteLine($"Selesai di tujuan pada titik {tasks[0].Result} {tasks[1].Result} {tasks[2].Result}");
+                Console.WriteLine($"Selesai di tujuan pada titik {tasks[0].Result} {tasks[1].Result} {zPosition}");
             }
         }
 
@@ -96,7 +97,7 @@ namespace printer3d
 
         public void SetXPoint(double xPoint)
         {
-            Console.WriteLine($"Check jumlah pont {xPoint}" );
+            //Console.WriteLine($"Check jumlah pont {xPoint}" );
             this.currentPoint.xAxis = xPoint;
         }
         public void SetYPoint(double yPoint) => this.currentPoint.yAxis = yPoint;
