@@ -9,25 +9,19 @@ using System.Threading.Tasks;
 
 namespace printer3d
 {
-    public class Motor(int axis, double velocity)
+    public abstract class Motor(int axis, double velocity)
     {
         public int Axis { get; set; } = axis;
         public double Velocity { get; set; } = velocity;
-        public double Acceleration { get; set; }
 
-        public async Task<double> MoveAsync(double startPoint, double endPoint, CancellationToken cancellationToken)
-        {
-            Stopwatch stopwatch = Stopwatch.StartNew();
-            double currentPosition = await CalculateDistance(Math.Abs(startPoint - endPoint), cancellationToken);
-            stopwatch.Stop();
-            Console.WriteLine($"Axis {this.Axis} sampai pada tujuan dalam waktu {stopwatch.Elapsed.TotalMilliseconds} {currentPosition} {startPoint} {endPoint}");
-            SetPointAxis(startPoint < endPoint ? currentPosition + startPoint : startPoint - currentPosition, this.Axis);
-            return startPoint < endPoint ? currentPosition + startPoint : startPoint - currentPosition;
-        }
+        public abstract Task<double> MoveAsync(double startPoint, double endPoint, PointWrapper currentPoint, CancellationToken cancellationToken);
+        public abstract Task<double> RiseDownAsync(double startPoint, PointWrapper currentPoint, CancellationToken cancellationToken);
 
-        private async Task<double> CalculateDistance(double distance, CancellationToken cancellationToken)
+
+        public async Task<double> CalculateDistance(double startPoint, double endPoint, CancellationToken cancellationToken)
         {
             double currentDistance = 0;
+            double distance = Math.Abs(endPoint - startPoint);
             while (!cancellationToken.IsCancellationRequested && currentDistance < distance)
             {
                 await Task.Delay(1000);
@@ -38,22 +32,9 @@ namespace printer3d
             return (currentDistance);
         }
 
-        private void SetPointAxis(double distance, double axis)
+        internal double RiseDownAsync(double xAxis1, double xAxis2, object pointwrapper, CancellationToken cancellationToken)
         {
-            Console.WriteLine($"axisnta {axis}");
-            switch(axis)
-            {
-                case 0:
-                    MotorManager.Instance.SetXPoint(distance); 
-                    break;
-                case 1:
-                    MotorManager.Instance.SetYPoint(distance); 
-                    break;
-                case 2:
-                    MotorManager.Instance.SetZPoint(distance); 
-                    break;  
-            }
+            throw new NotImplementedException();
         }
-        public double Stop() { return Acceleration; }
     }
 }

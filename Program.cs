@@ -7,41 +7,20 @@ using System.Diagnostics;
 
 
 Status currentStatus = Status.Idle;
-PointManager pointManager = new PointManager();
-MotorManager motorManager = MotorManager.Instance;
+MotorManager motorManager = new MotorManager(1, 2, 3);
 Point startPoint = new Point(0, 0, 0);
-List<Point> points = await pointManager.readPointData();
+List<Point> points = await PointFactory.readPointData();
 //motorManager.Move(startPoint, pointManager.points, motorManager.motors);
 
 while (true)
 {
-    /*if (Console.KeyAvailable)
-    {
-        if (Console.ReadKey(true).Key == ConsoleKey.Enter)
-        {
-            //Console.WriteLine("B");
-            Task task = Task.Run(() => motorManager.Move(startPoint, pointManager.points, motorManager.motors)); motorManager.Move(startPoint, pointManager.points, motorManager.motors);
-        }
-        else if(Console.ReadKey(true).Key == ConsoleKey.Escape)
-        {
-            Console.WriteLine("SABAR WOIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII");
-        }
-    }*/
     if (currentStatus == Status.Idle)
     {
         currentStatus = Status.MoveIn;
-        Task task = Task.Run(() => motorManager.Move(startPoint, pointManager.points, motorManager.motors));
+        Task task = Task.Run(() => motorManager.Move(startPoint, PointFactory.points, motorManager.motors));
     }
-    //Console.WriteLine("Test thread");
     var key = Console.ReadKey(true);
     if (!Console.KeyAvailable) motorManager.Stop();
-}
-
-async Task tryprint(string str)
-{
-    await Task.Delay(500);
-    Console.WriteLine(str);
-    return;
 }
 
 

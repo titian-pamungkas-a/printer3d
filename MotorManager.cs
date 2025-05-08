@@ -8,35 +8,20 @@ namespace printer3d
 {
     public sealed class MotorManager
     {
-        private static MotorManager instance;
-        private static object locker = new object();
         public Motor[] motors { get; set; }
         public Point currentPoint { get; set; }
+        public Point currentPoint1 { get; set; } = new Point(0, 0, 0);
         private CancellationTokenSource cancellationTokenSource;
         private CancellationToken cancellationToken;
         private Task<double>[] tasks;
 
-        public static MotorManager Instance
-        {
-            get{
-                lock (locker)
-                {
-                    if (instance == null)
-                    {
-                        instance = new MotorManager(1, 2, 3);
-                    }
-                    return instance;
-                }
-            }
-        }
-
-        private MotorManager(double xVelocity, double yVelocity, double zVelocity)
+        public MotorManager(double xVelocity, double yVelocity, double zVelocity)
         {
             this.motors = new Motor[]
             {
-                new Motor((int)Axis.X, xVelocity),
-                new Motor((int)Axis.Y, yVelocity),
-                new Motor((int)Axis.Z, zVelocity)
+                new MotorX((int)Axis.X, xVelocity, 2),
+                new MotorY((int)Axis.Y, yVelocity, 2),
+                new MotorZ((int)Axis.Z, zVelocity)
             };
             cancellationTokenSource = new CancellationTokenSource();
             cancellationToken = cancellationTokenSource.Token;
@@ -50,41 +35,44 @@ namespace printer3d
         public async Task Move(Point startPoint, List<Point> points, Motor[] motors)
         {
             this.currentPoint = startPoint;
+            PointWrapper pointwrapper = new PointWrapper(currentPoint);
             for (int i = 0; i < points.Count; i++)
             {
                 Console.WriteLine($"Titik sekarang {currentPoint}");
-                double zPosition = await motors[2].MoveAsync(currentPoint.zAxis, points[i].zAxis, cancellationToken);
-
+                pointwrapper = new PointWrapper(currentPoint);
+                double zInitialPosition = await ((MotorZ)motors[2]).RiseUpMotor(currentPoint.zAxis, pointwrapper, cancellationToken);
+                double zPosition = await motors[2].MoveAsync(currentPoint.zAxis, points[i].zAxis, pointwrapper, cancellationToken);
                 tasks = new Task<double>[]
                 {
-                    Task.Run(() => motors[0].MoveAsync(this.currentPoint.xAxis, points[i].xAxis, cancellationToken), cancellationToken),
-                    Task.Run(() => motors[1].MoveAsync(currentPoint.yAxis, points[i].yAxis, cancellationToken), cancellationToken),
-                    //Task.Run(() => motors[2].MoveAsync(currentPoint.zAxis, points[i].zAxis, cancellationToken), cancellationToken)
+                    motors[0].MoveAsync(currentPoint.xAxis, points[i].xAxis, pointwrapper, cancellationToken),
+                    motors[1].MoveAsync(currentPoint.yAxis, points[i].yAxis, pointwrapper, cancellationToken)
                 };
-                /*Task<double> xMotorTask = Task.Run(() => motors[0].MoveAsync(currentPoint.xAxis, points[i].xAxis, cancellationToken), cancellationToken);
-                Task<double> yMotorTask = Task.Run(() => motors[1].MoveAsync(currentPoint.yAxis, points[i].yAxis, cancellationToken), cancellationToken);
-                Task<double> zMotorTask = Task.Run(() => motors[2].MoveAsync(currentPoint.zAxis, points[i].zAxis, cancellationToken), cancellationToken);*/
+                if (tasks.Any(t => t.IsCanceled))
+                {
+                    return;
+                }
                 try
                 {
                     Task.WaitAll(tasks);
                 }
                 catch (Exception ex)
                 {
-                    foreach(var t in tasks)
-                    {
-                    if (t.IsCompletedSuccessfully)
-                        Console.WriteLine($"Completed with result: {t.Result}");
-                    else if (t.IsCanceled)
-                        Console.WriteLine($"Task was canceled.");
-                    else if (t.IsFaulted)
-                        Console.WriteLine($"Task faulted: {t.Exception?.GetBaseException().Message}");
-                    }
-                    return;
+                    //return;
                 }
+                finally
+                {
 
+                }
+                Console.WriteLine("INI POINT DI AWALLL:" + pointwrapper.CurrentPoint.xAxis);
                 //currentPoint = new Point(tasks[0].Result, tasks[1].Result, tasks[2].Result);
-                Console.WriteLine($"Selesai di tujuan pada titik {tasks[0].Result} {tasks[1].Result} {zPosition}");
+                Console.WriteLine($"Selesai di tujuan pada titik {pointwrapper.CurrentPoint.xAxis} {pointwrapper.CurrentPoint.yAxis} {pointwrapper.CurrentPoint.zAxis}");
             }
+            Task.WaitAll(
+                motors[0].RiseDownAsync(currentPoint.xAxis, pointwrapper, cancellationToken),
+                motors[1].RiseDownAsync(currentPoint.yAxis, pointwrapper, cancellationToken),
+                motors[2].RiseDownAsync(currentPoint.zAxis, pointwrapper, cancellationToken)
+            );
+
         }
 
         public void SetMotorsVelocity(double velocity)
@@ -102,5 +90,10 @@ namespace printer3d
         }
         public void SetYPoint(double yPoint) => this.currentPoint.yAxis = yPoint;
         public void SetZPoint(double zPoint) => this.currentPoint.zAxis = zPoint;
+    }
+
+    public class PointWrapper(Point point)
+    {
+        public Point CurrentPoint { get; set; } = point;
     }
 }

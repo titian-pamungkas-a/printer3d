@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace printer3d
 {
-    public class PointManager
+    public class PointFactory
     {
-        public List<Point> points { get; set; } = new List<Point>();
-        public PointManager()
+        public static List<Point> points { get; set; } = new List<Point>();
+        public PointFactory()
         {
             
             
         }
 
-        public async Task<List<Point>> readPointData()
+        public static async Task<List<Point>> readPointData()
         {
             Console.WriteLine("Mengambil data sequence dari ");
             try

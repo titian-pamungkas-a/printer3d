@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\____NewArc\\FORMULATRIX\\printer3d\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\motorz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:motorz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\motormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:motormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +15,28 @@
       "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:motor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\motory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:motory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\motorx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:motorx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\pointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:pointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\pointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:pointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|e:\\____newarc\\formulatrix\\printer3d\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4D02132-22FC-4FA7-ACE8-2987AEEF9D93}|printer3d.csproj|solutionrelative:status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +46,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MotorZ.cs",
+              "DocumentMoniker": "E:\\____NewArc\\FORMULATRIX\\printer3d\\MotorZ.cs",
+              "RelativeDocumentMoniker": "MotorZ.cs",
+              "ToolTip": "E:\\____NewArc\\FORMULATRIX\\printer3d\\MotorZ.cs",
+              "RelativeToolTip": "MotorZ.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA6wB0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T22:23:12.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MotorY.cs",
+              "DocumentMoniker": "E:\\____NewArc\\FORMULATRIX\\printer3d\\MotorY.cs",
+              "RelativeDocumentMoniker": "MotorY.cs",
+              "ToolTip": "E:\\____NewArc\\FORMULATRIX\\printer3d\\MotorY.cs",
+              "RelativeToolTip": "MotorY.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T22:22:48.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MotorX.cs",
+              "DocumentMoniker": "E:\\____NewArc\\FORMULATRIX\\printer3d\\MotorX.cs",
+              "RelativeDocumentMoniker": "MotorX.cs",
+              "ToolTip": "E:\\____NewArc\\FORMULATRIX\\printer3d\\MotorX.cs",
+              "RelativeToolTip": "MotorX.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T22:22:20.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Motor.cs",
+              "DocumentMoniker": "E:\\____NewArc\\FORMULATRIX\\printer3d\\Motor.cs",
+              "RelativeDocumentMoniker": "Motor.cs",
+              "ToolTip": "E:\\____NewArc\\FORMULATRIX\\printer3d\\Motor.cs",
+              "RelativeToolTip": "Motor.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T08:41:17.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MotorManager.cs",
+              "DocumentMoniker": "E:\\____NewArc\\FORMULATRIX\\printer3d\\MotorManager.cs",
+              "RelativeDocumentMoniker": "MotorManager.cs",
+              "ToolTip": "E:\\____NewArc\\FORMULATRIX\\printer3d\\MotorManager.cs",
+              "RelativeToolTip": "MotorManager.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAmwEgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T08:35:44.778Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -44,25 +121,27 @@
               "RelativeDocumentMoniker": "PointManager.cs",
               "ToolTip": "E:\\____NewArc\\FORMULATRIX\\printer3d\\PointManager.cs",
               "RelativeToolTip": "PointManager.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowCAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T09:07:37.713Z"
+              "WhenOpened": "2025-05-03T09:07:37.713Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Point.cs",
               "DocumentMoniker": "E:\\____NewArc\\FORMULATRIX\\printer3d\\Point.cs",
               "RelativeDocumentMoniker": "Point.cs",
               "ToolTip": "E:\\____NewArc\\FORMULATRIX\\printer3d\\Point.cs",
               "RelativeToolTip": "Point.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T09:06:26.245Z"
+              "WhenOpened": "2025-05-03T09:06:26.245Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Status.cs",
               "DocumentMoniker": "E:\\____NewArc\\FORMULATRIX\\printer3d\\Status.cs",
               "RelativeDocumentMoniker": "Status.cs",
@@ -70,44 +149,17 @@
               "RelativeToolTip": "Status.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T08:58:40.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T08:58:40.146Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Motor.cs",
-              "DocumentMoniker": "E:\\____NewArc\\FORMULATRIX\\printer3d\\Motor.cs",
-              "RelativeDocumentMoniker": "Motor.cs",
-              "ToolTip": "E:\\____NewArc\\FORMULATRIX\\printer3d\\Motor.cs",
-              "RelativeToolTip": "Motor.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAApwC4AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T08:41:17.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MotorManager.cs",
-              "DocumentMoniker": "E:\\____NewArc\\FORMULATRIX\\printer3d\\MotorManager.cs",
-              "RelativeDocumentMoniker": "MotorManager.cs",
-              "ToolTip": "E:\\____NewArc\\FORMULATRIX\\printer3d\\MotorManager.cs*",
-              "RelativeToolTip": "MotorManager.cs*",
-              "ViewState": "AgIAAEAAAAAAAAAAAAArwFYAAABvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T08:35:44.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\____NewArc\\FORMULATRIX\\printer3d\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\____NewArc\\FORMULATRIX\\printer3d\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-03T03:15:07.299Z",
               "EditorCaption": ""
