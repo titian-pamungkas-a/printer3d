@@ -20,14 +20,14 @@ namespace printer3d
             Stopwatch stopwatch = Stopwatch.StartNew();
             double currentPosition = await CalculateDistance(startPoint, endPoint, cancellationToken);
             stopwatch.Stop();
-            Console.WriteLine($"Axis {this.Axis} sampai pada tujuan dalam waktu {stopwatch.Elapsed.TotalMilliseconds} {currentPosition} {startPoint} {endPoint}");
+            Log.Info($"Axis {this.Axis} sampai pada tujuan dalam waktu {stopwatch.Elapsed.TotalMilliseconds} {currentPosition} {startPoint} {endPoint}");
             currentPoint.CurrentPoint.SetAxisPoint(startPoint < endPoint ? currentPosition + startPoint : startPoint - currentPosition, this.Axis);
             return startPoint < endPoint ? currentPosition + startPoint : startPoint - currentPosition;
         }
 
         public async Task<double> RiseUpMotor(double startPoint, PointWrapper currentPoint, CancellationToken cancellationToken)
         {
-            return await MoveAsync(startPoint, 18, currentPoint, cancellationToken);
+            return await MoveAsync(startPoint, 12, currentPoint, cancellationToken);
         }
 
         public override async Task<double> RiseDownAsync(double startPoint, PointWrapper currentPoint, CancellationToken cancellationToken)

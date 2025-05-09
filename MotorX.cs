@@ -20,7 +20,7 @@ namespace printer3d
             Stopwatch stopwatch = Stopwatch.StartNew();
             double currentPosition = await CalculateDistance(startPoint, endPoint, cancellationToken);
             stopwatch.Stop();
-            Console.WriteLine($"Axis {this.Axis} sampai pada tujuan dalam waktu {stopwatch.Elapsed.TotalMilliseconds} {currentPosition} {startPoint} {endPoint}");
+            Log.Info($"Axis {this.Axis} sampai pada tujuan dalam waktu {stopwatch.Elapsed.TotalMilliseconds} {currentPosition} {startPoint} {endPoint}");
             currentPoint.CurrentPoint.SetAxisPoint(startPoint < endPoint ? currentPosition + startPoint : startPoint - currentPosition, this.Axis);
             return startPoint < endPoint ? currentPosition + startPoint : startPoint - currentPosition;
         }

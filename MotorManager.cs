@@ -38,7 +38,7 @@ namespace printer3d
             PointWrapper pointwrapper = new PointWrapper(currentPoint);
             for (int i = 0; i < points.Count; i++)
             {
-                Console.WriteLine($"Titik sekarang {currentPoint}");
+                Log.Info($"Titik sekarang {currentPoint}");
                 pointwrapper = new PointWrapper(currentPoint);
                 double zInitialPosition = await ((MotorZ)motors[2]).RiseUpMotor(currentPoint.zAxis, pointwrapper, cancellationToken);
                 double zPosition = await motors[2].MoveAsync(currentPoint.zAxis, points[i].zAxis, pointwrapper, cancellationToken);
@@ -47,49 +47,37 @@ namespace printer3d
                     motors[0].MoveAsync(currentPoint.xAxis, points[i].xAxis, pointwrapper, cancellationToken),
                     motors[1].MoveAsync(currentPoint.yAxis, points[i].yAxis, pointwrapper, cancellationToken)
                 };
-                if (tasks.Any(t => t.IsCanceled))
-                {
-                    return;
-                }
                 try
                 {
                     Task.WaitAll(tasks);
                 }
                 catch (Exception ex)
                 {
-                    //return;
+                    Log.Info(ex.Message);
+                    await BackToIdle(pointwrapper);
                 }
                 finally
                 {
-
+                    Console.WriteLine($"Selesai di tujuan pada titik {pointwrapper.CurrentPoint.xAxis} {pointwrapper.CurrentPoint.yAxis} {pointwrapper.CurrentPoint.zAxis}");
                 }
-                Console.WriteLine("INI POINT DI AWALLL:" + pointwrapper.CurrentPoint.xAxis);
-                //currentPoint = new Point(tasks[0].Result, tasks[1].Result, tasks[2].Result);
-                Console.WriteLine($"Selesai di tujuan pada titik {pointwrapper.CurrentPoint.xAxis} {pointwrapper.CurrentPoint.yAxis} {pointwrapper.CurrentPoint.zAxis}");
+                
             }
-            Task.WaitAll(
+            /*Task.WaitAll(
                 motors[0].RiseDownAsync(currentPoint.xAxis, pointwrapper, cancellationToken),
                 motors[1].RiseDownAsync(currentPoint.yAxis, pointwrapper, cancellationToken),
                 motors[2].RiseDownAsync(currentPoint.zAxis, pointwrapper, cancellationToken)
+            );*/
+            await BackToIdle(pointwrapper);
+        }
+
+        private async Task BackToIdle(PointWrapper pointwrapper)
+        {
+            Task.WaitAll(
+                motors[0].RiseDownAsync(currentPoint.xAxis, pointwrapper, CancellationToken.None),
+                motors[1].RiseDownAsync(currentPoint.yAxis, pointwrapper, CancellationToken.None),
+                motors[2].RiseDownAsync(currentPoint.zAxis, pointwrapper, CancellationToken.None)
             );
-
         }
-
-        public void SetMotorsVelocity(double velocity)
-        {
-            foreach (Motor motor in motors)
-            {
-                motor.Velocity = velocity;
-            }
-        }
-
-        public void SetXPoint(double xPoint)
-        {
-            //Console.WriteLine($"Check jumlah pont {xPoint}" );
-            this.currentPoint.xAxis = xPoint;
-        }
-        public void SetYPoint(double yPoint) => this.currentPoint.yAxis = yPoint;
-        public void SetZPoint(double zPoint) => this.currentPoint.zAxis = zPoint;
     }
 
     public class PointWrapper(Point point)

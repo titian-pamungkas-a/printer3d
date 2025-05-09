@@ -26,15 +26,10 @@ namespace printer3d
             {
                 await Task.Delay(1000);
                 currentDistance += (this.Velocity / 1);
-                Console.WriteLine($"Axis {this.Axis} menempuh jarak {currentDistance}");
-                Console.WriteLine($"ke 2 {this.Axis} {this.Velocity} {distance} {currentDistance}");
+                Log.Info($"Axis {this.Axis} menempuh jarak {currentDistance}");
+                Log.Info($"ke 2 {this.Axis} {this.Velocity} {distance} {currentDistance}");
             } 
             return (currentDistance);
-        }
-
-        internal double RiseDownAsync(double xAxis1, double xAxis2, object pointwrapper, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
         }
     }
 }

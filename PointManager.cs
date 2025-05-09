@@ -17,11 +17,11 @@ namespace printer3d
 
         public static async Task<List<Point>> readPointData()
         {
-            Console.WriteLine("Mengambil data sequence dari ");
+            Log.Info("Mengambil data sequence dari ");
             try
             {
                 await Task.Delay(10);
-                for (int i = 1; i <= 8; i++)
+                for (int i = 1; i <= 4; i++)
                 {
                     points.Add(new Point(6 * i, 6 * i, 6 * i));
                 }
@@ -31,12 +31,12 @@ namespace printer3d
                 points[2].xAxis = 12;
                 points[2].yAxis = 12;
                 points[2].zAxis = 12;
-                Console.WriteLine("Berhasil mengambil data sequence dari ");
+                Log.Info("Berhasil mengambil data sequence dari ");
                 return points;
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Log.Info(ex.Message);
                 return new List<Point>();
             }
             

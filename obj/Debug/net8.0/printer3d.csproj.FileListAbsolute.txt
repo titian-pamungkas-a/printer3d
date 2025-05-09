@@ -13,3 +13,7 @@ E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.pdb
 E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.genruntimeconfig.cache
 E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\ref\printer3d.dll
 E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.sourcelink.json
+E:\____NewArc\FORMULATRIX\printer3d\bin\Debug\net8.0\NLog.dll
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.csproj.AssemblyReference.cache
+E:\____NewArc\FORMULATRIX\printer3d\obj\Debug\net8.0\printer3d.csproj.Up2Date
+E:\____NewArc\FORMULATRIX\printer3d\bin\Debug\net8.0\nlog.config
