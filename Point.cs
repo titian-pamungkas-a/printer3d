@@ -27,5 +27,21 @@ namespace printer3d
                     break;
             }
         }
+
+        public double GetAxisPoint(int axis)
+        {
+            switch (axis)
+            {
+                case 0:
+                    return xAxis;
+                case 1:
+                    return yAxis;
+                case 2:
+                    return zAxis;
+            }
+            return xAxis;
+        }
+
+
     }
 }

@@ -13,12 +13,35 @@ namespace printer3d
     {
         public int Axis { get; set; } = axis;
         public double Velocity { get; set; } = velocity;
-
-        public abstract Task<double> MoveAsync(double startPoint, double endPoint, PointWrapper currentPoint, CancellationToken cancellationToken);
         public abstract Task<double> RiseDownAsync(double startPoint, PointWrapper currentPoint, CancellationToken cancellationToken);
 
+        protected char GetAxisPoint(int axis)
+        {
+            switch (axis)
+            {
+                case 0:
+                    return 'X';
+                case 1:
+                    return 'Y';
+                case 2:
+                    return 'Z';
+            }
+            return '\0';
+        }
 
-        public async Task<double> CalculateDistance(double startPoint, double endPoint, CancellationToken cancellationToken)
+        public async Task<double> MoveAsync(double startPoint, double endPoint, PointWrapper currentPoint, CancellationToken cancellationToken)
+        {
+            Stopwatch stopwatch = Stopwatch.StartNew();
+            double currentPosition = await CalculateDistance(currentPoint, startPoint, endPoint, cancellationToken);
+            stopwatch.Stop();
+            Log.Info($"Axis {GetAxisPoint(Axis)} " +
+                $"selesai pada {stopwatch.Elapsed.TotalSeconds} " +
+                $"jalur {startPoint}-{endPoint} " +
+                $"posisi {GetAxisPoint(Axis)}_{currentPoint.CurrentPoint.GetAxisPoint(Axis)}");
+            return startPoint < endPoint ? currentPosition + startPoint : startPoint - currentPosition;
+        }
+
+        public async Task<double> CalculateDistance(PointWrapper currentPoint, double startPoint, double endPoint, CancellationToken cancellationToken)
         {
             double currentDistance = 0;
             double distance = Math.Abs(endPoint - startPoint);
@@ -26,8 +49,8 @@ namespace printer3d
             {
                 await Task.Delay(1000);
                 currentDistance += (this.Velocity / 1);
-                Log.Info($"Axis {this.Axis} menempuh jarak {currentDistance}");
-                Log.Info($"ke 2 {this.Axis} {this.Velocity} {distance} {currentDistance}");
+                currentPoint.CurrentPoint.SetAxisPoint(startPoint < endPoint ? currentDistance + startPoint : startPoint - currentDistance, Axis);
+                Log.Info($"Axis {GetAxisPoint(Axis)} menempuh jarak {currentDistance} dan berada pada titik {currentPoint.CurrentPoint.GetAxisPoint(Axis)}");
             } 
             return (currentDistance);
         }

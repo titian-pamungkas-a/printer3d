@@ -16,5 +16,15 @@ namespace printer3d
             Logger.Info(text);
         }
 
+        public static void Error<T>(T text)
+        {
+            Logger.Error(text);
+        }
+
+        public static void UserAction<T>(T text)
+        {
+            Logger.Info($"<User Action> {text}");
+        }
+
     }
 }

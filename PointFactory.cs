@@ -9,18 +9,13 @@ namespace printer3d
     public class PointFactory
     {
         public static List<Point> points { get; set; } = new List<Point>();
-        public PointFactory()
-        {
-            
-            
-        }
 
         public static async Task<List<Point>> readPointData()
         {
             Log.Info("Mengambil data sequence dari ");
             try
             {
-                await Task.Delay(10);
+                await Task.Delay(2000);
                 for (int i = 1; i <= 4; i++)
                 {
                     points.Add(new Point(6 * i, 6 * i, 6 * i));

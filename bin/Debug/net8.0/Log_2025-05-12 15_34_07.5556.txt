@@ -1,0 +1,44 @@
+2025-05-12 15:34:07.5556|INFO|printer3d.Log|Mengambil data sequence dari 
+2025-05-12 15:34:09.5835|INFO|printer3d.Log|Berhasil mengambil data sequence dari 
+2025-05-12 15:34:11.8422|INFO|printer3d.Log|<User Action> User menjalankan motor
+2025-05-12 15:34:12.4118|INFO|printer3d.Log|Axis Z menempuh jarak 1,5 dan berada pada titik 1,5
+2025-05-12 15:34:12.9232|INFO|printer3d.Log|Axis Z menempuh jarak 3 dan berada pada titik 3
+2025-05-12 15:34:13.4232|INFO|printer3d.Log|Axis Z menempuh jarak 4,5 dan berada pada titik 4,5
+2025-05-12 15:34:13.9336|INFO|printer3d.Log|Axis Z menempuh jarak 6 dan berada pada titik 6
+2025-05-12 15:34:14.4475|INFO|printer3d.Log|Axis Z menempuh jarak 7,5 dan berada pada titik 7,5
+2025-05-12 15:34:14.9608|INFO|printer3d.Log|Axis Z menempuh jarak 9 dan berada pada titik 9
+2025-05-12 15:34:15.4739|INFO|printer3d.Log|Axis Z menempuh jarak 10,5 dan berada pada titik 10,5
+2025-05-12 15:34:15.9895|INFO|printer3d.Log|Axis Z menempuh jarak 12 dan berada pada titik 12
+2025-05-12 15:34:15.9895|INFO|printer3d.Log|Axis Z selesai pada 4,1459177 jalur 0-12 posisi Z_12
+2025-05-12 15:34:15.9895|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:34:16.5035|INFO|printer3d.Log|Axis Z menempuh jarak 1,5 dan berada pada titik 10,5
+2025-05-12 15:34:17.0187|INFO|printer3d.Log|Axis Z menempuh jarak 3 dan berada pada titik 9
+2025-05-12 15:34:17.5334|INFO|printer3d.Log|Axis Z menempuh jarak 4,5 dan berada pada titik 7,5
+2025-05-12 15:34:18.0451|INFO|printer3d.Log|Axis Z menempuh jarak 6 dan berada pada titik 6
+2025-05-12 15:34:18.0451|INFO|printer3d.Log|Axis Z selesai pada 2,0541169 jalur 12-6 posisi Z_6
+2025-05-12 15:34:18.5564|INFO|printer3d.Log|Axis Y menempuh jarak 1 dan berada pada titik 1
+2025-05-12 15:34:18.5564|INFO|printer3d.Log|Axis X menempuh jarak 0,5 dan berada pada titik 0,5
+2025-05-12 15:34:19.0702|INFO|printer3d.Log|Axis X menempuh jarak 1 dan berada pada titik 1
+2025-05-12 15:34:19.0702|INFO|printer3d.Log|Axis Y menempuh jarak 2 dan berada pada titik 2
+2025-05-12 15:34:19.5804|INFO|printer3d.Log|Axis Y menempuh jarak 3 dan berada pada titik 3
+2025-05-12 15:34:19.5804|INFO|printer3d.Log|Axis X menempuh jarak 1,5 dan berada pada titik 1,5
+2025-05-12 15:34:20.0937|INFO|printer3d.Log|Axis X menempuh jarak 2 dan berada pada titik 2
+2025-05-12 15:34:20.0937|INFO|printer3d.Log|Axis Y menempuh jarak 4 dan berada pada titik 4
+2025-05-12 15:34:20.6071|INFO|printer3d.Log|Axis Y menempuh jarak 5 dan berada pada titik 5
+2025-05-12 15:34:20.6071|INFO|printer3d.Log|Axis X menempuh jarak 2,5 dan berada pada titik 2,5
+2025-05-12 15:34:21.1201|INFO|printer3d.Log|Axis X menempuh jarak 3 dan berada pada titik 3
+2025-05-12 15:34:21.1201|INFO|printer3d.Log|Axis Y menempuh jarak 6 dan berada pada titik 6
+2025-05-12 15:34:21.1201|INFO|printer3d.Log|Axis Y selesai pada 3,0747819 jalur 0-6 posisi Y_6
+2025-05-12 15:34:21.6331|INFO|printer3d.Log|Axis X menempuh jarak 3,5 dan berada pada titik 3,5
+2025-05-12 15:34:22.1441|INFO|printer3d.Log|Axis X menempuh jarak 4 dan berada pada titik 4
+2025-05-12 15:34:22.6450|INFO|printer3d.Log|Axis X menempuh jarak 4,5 dan berada pada titik 4,5
+2025-05-12 15:34:23.1463|INFO|printer3d.Log|Axis X menempuh jarak 5 dan berada pada titik 5
+2025-05-12 15:34:23.6566|INFO|printer3d.Log|Axis X menempuh jarak 5,5 dan berada pada titik 5,5
+2025-05-12 15:34:24.1709|INFO|printer3d.Log|Axis X menempuh jarak 6 dan berada pada titik 6
+2025-05-12 15:34:24.1709|INFO|printer3d.Log|Axis X selesai pada 6,125509 jalur 0-6 posisi X_6
+2025-05-12 15:34:24.1709|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:34:24.6841|INFO|printer3d.Log|Axis Z menempuh jarak 1,5 dan berada pada titik 7,5
+2025-05-12 15:34:25.1843|INFO|printer3d.Log|Axis Z menempuh jarak 3 dan berada pada titik 9
+2025-05-12 15:34:25.6988|INFO|printer3d.Log|Axis Z menempuh jarak 4,5 dan berada pada titik 10,5
+2025-05-12 15:34:26.2007|INFO|printer3d.Log|Axis Z menempuh jarak 6 dan berada pada titik 12
+2025-05-12 15:34:26.7144|INFO|printer3d.Log|Axis Z menempuh jarak 7,5 dan berada pada titik 13,5

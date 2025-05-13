@@ -1,0 +1,62 @@
+2025-05-12 15:26:48.6605|INFO|printer3d.Log|Mengambil data sequence dari 
+2025-05-12 15:26:50.6908|INFO|printer3d.Log|Berhasil mengambil data sequence dari 
+2025-05-12 15:26:51.9000|INFO|printer3d.Log|<User Action> User menjalankan motor
+2025-05-12 15:26:52.9123|INFO|printer3d.Log|Axis Z menempuh jarak 3 dan berada pada titik 3
+2025-05-12 15:26:53.9214|INFO|printer3d.Log|Axis Z menempuh jarak 6 dan berada pada titik 6
+2025-05-12 15:26:54.9305|INFO|printer3d.Log|Axis Z menempuh jarak 9 dan berada pada titik 9
+2025-05-12 15:26:55.5261|INFO|printer3d.Log|<User Action> User menghentikan motor. Tunggu proses berhenti
+2025-05-12 15:26:55.5261|INFO|printer3d.Log|Axis Z selesai pada 0,0004928 jalur 9-12 posisi Z_9
+2025-05-12 15:26:55.5261|INFO|printer3d.Log|Axis X selesai pada 1,7E-06 jalur 0-0 posisi X_0
+2025-05-12 15:26:55.5261|INFO|printer3d.Log|Axis Y selesai pada 1,9E-06 jalur 0-0 posisi Y_0
+2025-05-12 15:26:55.9362|INFO|printer3d.Log|Axis Z menempuh jarak 12 dan berada pada titik 12
+2025-05-12 15:26:55.9362|INFO|printer3d.Log|Axis Z selesai pada 4,0353641 jalur 0-12 posisi Z_12
+2025-05-12 15:26:55.9362|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:26:55.9362|INFO|printer3d.Log|Axis Z selesai pada 3,3E-06 jalur 12-6 posisi Z_12
+2025-05-12 15:26:55.9362|INFO|printer3d.Log|Axis X selesai pada 1,1E-06 jalur 0-6 posisi X_0
+2025-05-12 15:26:55.9362|INFO|printer3d.Log|Axis Y selesai pada 7E-07 jalur 0-6 posisi Y_0
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis Z selesai pada 1E-06 jalur 12-18 posisi Z_12
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis X selesai pada 6E-07 jalur 0-18 posisi X_0
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis Y selesai pada 1,4E-06 jalur 0-18 posisi Y_0
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis Z selesai pada 1E-06 jalur 12-12 posisi Z_12
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis X selesai pada 5E-07 jalur 0-12 posisi X_0
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis Y selesai pada 1,8E-06 jalur 0-12 posisi Y_0
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis Z selesai pada 9E-07 jalur 12-24 posisi Z_12
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis X selesai pada 1,1E-06 jalur 0-24 posisi X_0
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis Y selesai pada 7E-07 jalur 0-24 posisi Y_0
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis Z selesai pada 9E-07 jalur 12-12 posisi Z_12
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis X selesai pada 5E-07 jalur 0-0 posisi X_0
+2025-05-12 15:26:55.9392|INFO|printer3d.Log|Axis Y selesai pada 5E-07 jalur 0-0 posisi Y_0
+2025-05-12 15:26:56.5405|INFO|printer3d.Log|Axis Z menempuh jarak 3 dan berada pada titik 6
+2025-05-12 15:26:56.9427|INFO|printer3d.Log|Axis Z menempuh jarak 3 dan berada pada titik 9
+2025-05-12 15:26:57.5483|INFO|printer3d.Log|Axis Z menempuh jarak 6 dan berada pada titik 3
+2025-05-12 15:26:57.9538|INFO|printer3d.Log|Axis Z menempuh jarak 6 dan berada pada titik 6
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Z menempuh jarak 9 dan berada pada titik 0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Z selesai pada 3,0291154 jalur 9-0 posisi Z_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|<User Action> User menjalankan motor
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Z selesai pada 4,9E-06 jalur 0-12 posisi Z_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Z selesai pada 1,3E-06 jalur 0-6 posisi Z_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis X selesai pada 6E-07 jalur 0-6 posisi X_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Y selesai pada 9E-07 jalur 0-6 posisi Y_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Z selesai pada 9E-07 jalur 0-18 posisi Z_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis X selesai pada 4E-07 jalur 0-18 posisi X_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Y selesai pada 4E-07 jalur 0-18 posisi Y_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Z selesai pada 9E-07 jalur 0-12 posisi Z_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis X selesai pada 5E-07 jalur 0-12 posisi X_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Y selesai pada 1,2E-06 jalur 0-12 posisi Y_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Z selesai pada 1E-06 jalur 0-24 posisi Z_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis X selesai pada 6E-07 jalur 0-24 posisi X_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Y selesai pada 1,2E-06 jalur 0-24 posisi Y_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Z selesai pada 1,6E-06 jalur 0-12 posisi Z_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis X selesai pada 1,1E-06 jalur 0-0 posisi X_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Y selesai pada 5E-07 jalur 0-0 posisi Y_0
+2025-05-12 15:26:58.5610|INFO|printer3d.Log|Axis Z selesai pada 1E-06 jalur 0-0 posisi Z_0
+2025-05-12 15:26:58.9653|INFO|printer3d.Log|Axis Z menempuh jarak 9 dan berada pada titik 3
+2025-05-12 15:26:59.9748|INFO|printer3d.Log|Axis Z menempuh jarak 12 dan berada pada titik 0
+2025-05-12 15:26:59.9748|INFO|printer3d.Log|Axis Z selesai pada 4,0346979 jalur 12-0 posisi Z_0

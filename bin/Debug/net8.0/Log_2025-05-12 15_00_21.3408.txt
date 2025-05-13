@@ -1,0 +1,56 @@
+2025-05-12 15:00:21.3408|INFO|printer3d.Log|Mengambil data sequence dari 
+2025-05-12 15:00:21.3761|INFO|printer3d.Log|Berhasil mengambil data sequence dari 
+2025-05-12 15:00:23.3603|INFO|printer3d.Log|<User Action> User menjalankan motor
+2025-05-12 15:00:24.3769|INFO|printer3d.Log|Axis Z menempuh jarak 3 dan berada pada titik 3
+2025-05-12 15:00:25.3818|INFO|printer3d.Log|Axis Z menempuh jarak 6 dan berada pada titik 6
+2025-05-12 15:00:26.3943|INFO|printer3d.Log|Axis Z menempuh jarak 9 dan berada pada titik 9
+2025-05-12 15:00:26.6875|INFO|printer3d.Log|<User Action> User menghentikan motor. Tunggu proses berhenti
+2025-05-12 15:00:26.6875|INFO|printer3d.Log|<User Action> User menjalankan motor
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 0,6336 0 9 12
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 0,0013 0 9 6
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis X sampai pada tujuan dalam waktu 0,0004 0 0 6
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis Y sampai pada tujuan dalam waktu 0,0017 0 0 6
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 0,0021 0 9 18
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis X sampai pada tujuan dalam waktu 0,0012 0 0 18
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis Y sampai pada tujuan dalam waktu 0,0007 0 0 18
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 0,001 0 9 12
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis X sampai pada tujuan dalam waktu 0,0006 0 0 12
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis Y sampai pada tujuan dalam waktu 0,0008 0 0 12
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 0,0009 0 9 24
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis X sampai pada tujuan dalam waktu 0,0002 0 0 24
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis Y sampai pada tujuan dalam waktu 0,0003 0 0 24
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis X sampai pada tujuan dalam waktu 0,0024 0 0 0
+2025-05-12 15:00:26.6917|INFO|printer3d.Log|Axis Y sampai pada tujuan dalam waktu 0,0008 0 0 0
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Z menempuh jarak 12 dan berada pada titik 12
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 4039,8444 12 0 12
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 0,0088 0 12 6
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis X sampai pada tujuan dalam waktu 0,0027 0 0 6
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Y sampai pada tujuan dalam waktu 0,0032 0 0 6
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 0,0052 0 12 18
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis X sampai pada tujuan dalam waktu 0,0024 0 0 18
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Y sampai pada tujuan dalam waktu 0,0016 0 0 18
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 0,0029 0 12 12
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis X sampai pada tujuan dalam waktu 0,0025 0 0 12
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Y sampai pada tujuan dalam waktu 0,0009 0 0 12
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Titik sekarang printer3d.Point
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 0,0049 0 12 24
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis X sampai pada tujuan dalam waktu 0,0027 0 0 24
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Y sampai pada tujuan dalam waktu 0,0018 0 0 24
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis X sampai pada tujuan dalam waktu 0,0022 0 0 0
+2025-05-12 15:00:27.4022|INFO|printer3d.Log|Axis Y sampai pada tujuan dalam waktu 0,002 0 0 0
+2025-05-12 15:00:27.6997|INFO|printer3d.Log|Axis Z menempuh jarak 3 dan berada pada titik 6
+2025-05-12 15:00:28.4133|INFO|printer3d.Log|Axis Z menempuh jarak 3 dan berada pada titik 9
+2025-05-12 15:00:28.7088|INFO|printer3d.Log|Axis Z menempuh jarak 6 dan berada pada titik 3
+2025-05-12 15:00:29.4280|INFO|printer3d.Log|Axis Z menempuh jarak 6 dan berada pada titik 6
+2025-05-12 15:00:29.7219|INFO|printer3d.Log|Axis Z menempuh jarak 9 dan berada pada titik 0
+2025-05-12 15:00:29.7219|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 3026,1385 9 9 0
+2025-05-12 15:00:30.4399|INFO|printer3d.Log|Axis Z menempuh jarak 9 dan berada pada titik 3
+2025-05-12 15:00:31.4431|INFO|printer3d.Log|Axis Z menempuh jarak 12 dan berada pada titik 0
+2025-05-12 15:00:31.4431|INFO|printer3d.Log|Axis Z sampai pada tujuan dalam waktu 4037,2755 12 12 0

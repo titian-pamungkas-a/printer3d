@@ -1,0 +1,3 @@
+2025-05-12 15:29:18.5284|INFO|printer3d.Log|Mengambil data sequence dari 
+2025-05-12 15:29:20.5532|INFO|printer3d.Log|Berhasil mengambil data sequence dari 
+2025-05-12 15:29:21.6576|INFO|printer3d.Log|<User Action> User telah menghentikan Program
