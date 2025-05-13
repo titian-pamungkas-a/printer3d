@@ -8,7 +8,6 @@ namespace printer3d
 {
     public interface IMotorAcceleration
     {
-        public void AccelerateMotor(double acc);
-        public void DeccelerateMotor(double acc);
+        public Task AccelerateMotor();
     }
 }

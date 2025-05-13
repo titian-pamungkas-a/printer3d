@@ -15,7 +15,6 @@ internal class Program
         MotorManager motorManager = new MotorManager(1, 2, 3);
         Point startPoint = new Point(0, 0, 0);
         List<Point> points = await PointFactory.readPointData();
-       
 
         while (true)
         {

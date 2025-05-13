@@ -15,14 +15,22 @@ namespace printer3d
             this.acceleration = acceleration;
         }
 
-        public void AccelerateMotor(double acc)
+        public override async Task<double> MoveAsync(double startPoint, double endPoint, PointWrapper currentPoint, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            Stopwatch stopwatch = Stopwatch.StartNew();
+            await AccelerateMotor();
+            double currentPosition = await CalculateDistance(currentPoint, startPoint, endPoint, cancellationToken);
+            stopwatch.Stop();
+            Log.Info($"Axis {GetAxisPoint(Axis)} " +
+                $"selesai pada {stopwatch.Elapsed.TotalSeconds} " +
+                $"jalur {startPoint}-{endPoint} " +
+                $"posisi {GetAxisPoint(Axis)}_{currentPoint.CurrentPoint.GetAxisPoint(Axis)}");
+            return startPoint < endPoint ? currentPosition + startPoint : startPoint - currentPosition;
         }
 
-        public void DeccelerateMotor(double acc)
+        public async Task AccelerateMotor()
         {
-            throw new NotImplementedException();
+            await Task.Delay(2000);
         }
 
         public override async Task<double> RiseDownAsync(double startPoint, PointWrapper currentPoint, CancellationToken cancellationToken)

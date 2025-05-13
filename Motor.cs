@@ -29,7 +29,7 @@ namespace printer3d
             return '\0';
         }
 
-        public async Task<double> MoveAsync(double startPoint, double endPoint, PointWrapper currentPoint, CancellationToken cancellationToken)
+        public virtual async Task<double> MoveAsync(double startPoint, double endPoint, PointWrapper currentPoint, CancellationToken cancellationToken)
         {
             Stopwatch stopwatch = Stopwatch.StartNew();
             double currentPosition = await CalculateDistance(currentPoint, startPoint, endPoint, cancellationToken);
